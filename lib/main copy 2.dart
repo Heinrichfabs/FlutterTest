@@ -43,35 +43,38 @@ class Home extends StatelessWidget {
 
 
       
-      body: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 6,
-            child: Container(
-               padding: EdgeInsets.all(30.0),
-            color: Colors.cyan,
-            child: Text('1'),
-            ),
-          ),
-          Expanded(
-             flex: 3,
-            child: Container(
-                 padding: EdgeInsets.all(30.0),
-            color: Colors.red,
-            child: Text('2'),
-            ),
-          ),
-          Expanded(
-             flex: 1,
-            child: Container(
-                 padding: EdgeInsets.all(30.0),
-            color: Colors.green,
-            child: Text('3'),
-            ),
-          ),
+      body: Column( 
+       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+       crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+
+        Row(children: <Widget>[
+
+          Text('hello '),
+          Text('world'),
+    
+        ],),
+         
+         Container(
+           padding: EdgeInsets.all(20.0),
+           color: Colors.cyan,
+           child: Text('one'),
+         ),
+      
+       Container(
+           padding: EdgeInsets.all(30.0),
+           color: Colors.cyan,
+           child: Text('two'),
+         ),
+      
+       Container(
+           padding: EdgeInsets.all(40.0),
+           color: Colors.cyan,
+           child: Text('three'),
+         ),
 
 
-        ]
+      ],
               ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

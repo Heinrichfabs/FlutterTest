@@ -39,39 +39,31 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-
-
-
+      body: Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
       
-      body: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 6,
-            child: Container(
-               padding: EdgeInsets.all(30.0),
-            color: Colors.cyan,
-            child: Text('1'),
-            ),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      
+      
+      children: <Widget>[
+
+          Text('Welcome to PromdiFarm'),
+
+          FlatButton(onPressed: () {}, 
+          color: Colors.amber,
+          child: Text('Click me'),
           ),
-          Expanded(
-             flex: 3,
-            child: Container(
-                 padding: EdgeInsets.all(30.0),
-            color: Colors.red,
-            child: Text('2'),
-            ),
-          ),
-          Expanded(
-             flex: 1,
-            child: Container(
-                 padding: EdgeInsets.all(30.0),
+
+          Container(
             color: Colors.green,
-            child: Text('3'),
-            ),
-          ),
+            padding: EdgeInsets.all(20.0),
+            child: Text('inside container'),
 
 
-        ]
+          )
+      
+
+
+      ],
               ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
